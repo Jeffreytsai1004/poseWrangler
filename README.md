@@ -3,28 +3,30 @@ poseWrangler
 
 ![alt tag](epic_pose_wrangler/docs/site/html/_images/v2.png)
 
-Overview
+概述
 ---------------
-PoseWrangler is a tool for interfacing with Epic’s MayaUERBFPlugin. The plugin is distributed by Epic Games and installed via Quixel Bridge. This is the same version distributed through Quixel Bridge with the Maya plugin (v6.9.2 or later)
- - Supports scenes created with the UERBFSolverNode
- - Multiple Driver Support
- - Initial blendshape support (WIP)
- - Supports Maya 2018-2022
- - Support for custom mirror mappings to allow for rigs with naming conventions that deviate from the default UE5 conventions
- - Fully automatable via Python and MayaPy
- - Serialization/deserialization to dictionary or JSON file
- - Support for custom extensions and context menu actions
+PoseWrangler是一个用于与Epic的MayaUERBFPlugin进行接口交互的工具。该插件由Epic Games分发，并通过Quixel Bridge安装。这是与Maya插件（v6.9.2或更高版本）一起通过Quixel Bridge分发的相同版本。
+ - 支持使用UERBFSolverNode创建的场景
+ - 多驱动程序支持
+ - 初始混合形状支持（WIP）
+ - 支持Maya 2018-2022
+ - 支持自定义镜像映射，允许使用与默认UE5约定不同的命名约定的绑定
+ - 可以通过Python和MayaPy完全自动化
+ - 序列化/反序列化为字典或JSON文件
+ - 支持自定义扩展和上下文菜单操作
 
-__Contributors__
+贡献者
+---------------
  - Chris Theodosius
  - Chris Evans
  - Judd Simantov
  - David Corral
  - Borna Berc
 
-Opening the tool
+打开工具
 ---------------
-To load the tool, you can call it like so:
+要加载该工具，可以这样调用它：
+
 ```
 from epic_pose_wrangler import main
 pose_wrangler = main.PoseWrangler()
